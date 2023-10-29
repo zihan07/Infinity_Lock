@@ -1,288 +1,31 @@
-<!doctype html>
-<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
-<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
-<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
-<!--[if (gt IE 7)|!(IE)]><!-->
-<html lang="en-us">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Edu365 | University HTML Template</title>
-<meta name="description" content="Edu365 | University HTML Template">
-<meta name="author" content="Edu365">
-<meta name="copyright" content="Edu365">
-<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
-<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
-<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
-<script src="assets/js/google-code-prettify/prettify.js"></script>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/jquery.scrollTo.js"></script>
-<script src="assets/js/jquery.easing.js"></script>
-<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
-<script src="assets/js/script.js"></script>
-<style>
-html {
-	background-color: #F3F3F3;
-	color: #585858;
-}
-		::-moz-selection {
-background:#111111;
-color:#F1F1F1;
-}
-::selection {
-	background: #111111;
-	color: #F1F1F1;
-}
-#documenter_sidebar #documenter_logo {
-	background-image: url(assets/images/logo.png);
-}
-a {
-	color: #111111;
-}
-.btn {
-	border-radius: 3px;
-}
-.btn-primary {
-	background-image: -moz-linear-gradient(top, #585858, #3B3B3B);
-	background-image: -ms-linear-gradient(top, #585858, #3B3B3B);
-	background-image: -webkit-gradient(linear, 0 0, 0 585858%, from(#333333), to(#3B3B3B));
-	background-image: -webkit-linear-gradient(top, #585858, #3B3B3B);
-	background-image: -o-linear-gradient(top, #585858, #3B3B3B);
-	background-image: linear-gradient(top, #585858, #3B3B3B);
- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3B3B3B', GradientType=0);
-	border-color: #3B3B3B #3B3B3B #bfbfbf;
-	color: #F9F9F9;
-}
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-	border-color: #585858 #585858 #bfbfbf;
-	background-color: #3B3B3B;
-}
-hr {
-	border-top: 1px solid #E5E5E5;
-	border-bottom: 1px solid #F9F9F9;
-}
-#documenter_sidebar, #documenter_sidebar ul a {
-	background-color: #333333;
-	color: #F1F1F1;
-http://static.revaxarts-themes.com/noise.gif
-}
-#documenter_sidebar ul a {
-	-webkit-text-shadow: 1px 1px 0px #444444;
-	-moz-text-shadow: 1px 1px 0px #444444;
-	text-shadow: 1px 1px 0px #444444;
-}
-#documenter_sidebar ul {
-	border-top: 1px solid #222222;
-}
-#documenter_sidebar ul a {
-	border-top: 1px solid #444444;
-	border-bottom: 1px solid #222222;
-	color: #F1F1F1;
-}
-#documenter_sidebar ul a:hover {
-	background: #424242;
-	color: #F1F1F1;
-	border-top: 1px solid #4B4B4B;
-}
-#documenter_sidebar ul a.current {
-	background: #272727;
-	color: #F1F1F1;
-	border-top: 1px solid #4B4B4B;
-}
-#documenter_copyright {
-	display: block !important;
-	visibility: visible !important;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="documenter-project-documenter-v20">
-<div id="documenter_sidebar"> <a href="#documenter_cover" id="documenter_logo"></a>
-  <ul id="documenter_nav">
-    <li><a class="current" href="#documenter_cover">Start</a></li>
+
+<body>
+    <header>
+        <h1>University Management System</h1>
+    </header>
     
-	<li><a href="#server" title="Server">How to Upload in server</a></li>
-    
-    <li><a href="#features" title="Features">Features</a></li>
-    
-    
-    <li><a href="#structure" title="Contents">HTML Structure</a></li>
-   
-     
-     <li><a href="#JS" title="css">Java Scripts </a></li>
-     
-     
-    
-    <li><a href="#Fonts" title="Fonts">Used Fonts</a></li>
-    
-    
-    <li><a href="#Credits" title="Credits">Sources and Credits</a></li>
-    
-    
-    <li><a href="#Conclusion" title="Conclusion">Conclusion</a></li>
-    
-    
-  </ul>
-   <div id="documenter_copyright">Copyright Webstrot 2018-19<br>
-    </div>
-</div>
-<div id="documenter_content">
-<section id="documenter_cover">
-  <h1 class="mylogo">Edu365 | University HTML Template</h1>
-  <hr>
-  <ul>
-    <li>Created: 01/Feb/2020</li>
-    <li>Created by : <a href="https://themeforest.net/user/webstrot/portfolio"> Webstrot</a> </li>
-    
-  </ul>
+    <main>
+        <section id="student-details">
+            <h2>Student Information</h2>
+            <div id="student-info"></div>
+        </section>
+        
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <ul id="course-list"></ul>
+        </section>
+    </main>
 
-<p>
-Edu365 is clean, modern and unique HTML5 template that has beautiful design and unique features. This will be the best suited for your educational purpose website like university, college, school, kindergarten, online courses, blog, academy, courses, education, education center, education HTML, tuition, tutoring, business, events, institute, learning, teacher and much more.
-</p>
-
- 
-<p>Thank you for purchasing my Template. If you have any questions that are beyond the scope of this help file, 
- please feel free to email via my user Page Contact form here. Thank you so much!</p>
-  
-<h4>Note :</h4>
-
-<p>Please note that images used in live preview are not included in the package. If you have any questions please feel free to email via my user page contact form here. Thank you!</p>
-  
-  <br>
-  <p>If you like this template...</p>
-  <img alt="wink" height="20" src="assets/images/icon-star.gif"> <br>
-  <strong>Please Don’t Forget to Rate it!</strong>
-  </p>
-</section>
-<hr>
-<section id="server">
-  <div class="page-header">
-    <h3>How to Upload in Server</h3>
-    <hr class="notop">
-  </div>
-  
-  <h4>Here is video how to upload template on cpanel </h4>
-<p><a href= "https://www.youtube.com/watch?v=iPAGfEd8ss4&t=76s">https://www.youtube.com/watch?v=iPAGfEd8ss4&t=76s</a>
-or 
-How to Upload a File Using File Manager
-To upload a file through cPanel's File Manager, please do the following:
-<ul>
-
-<li>Login to cPanel.</li>
-<li>Under Files, click File Manager.</li>
-<li>Select Web Root and Show Hidden Files, then click Go.</li>
-<li>Click to open the folder to which you'd like to upload files.</li>
-<li>Click Upload from the top toolbar.</li>
-<li>Click Browse (some web browsers will have Choose File instead).</li>
-<li>Select the file on your computer that you wish to upload.</li>
-</ul>
-Once the file has been selected, it will automatically upload. You may select additional files while uploads are in progress.</p>
-
-
-</section>
-<hr>
-
-
-<section id="features">
-  <div class="page-header">
-    <h3>Features</h3>
-    <hr class="notop">
-  </div>
-  <ul>
-    <li>18+ HTML5 Valid Pages (CSS3)</li>
-    <li>02+ Home Pages Styles</li>
-	<li>Login and Register Page</li>
-	<li>Multipage Layout</li>
-	<li>Full Page Scrolling Section </li>
-	<li>Best Design Experience With Homepages</li>
-	<li>Super fast loading speed</li>
-	<li>Shop Page With Checkout</li>
-	<li>Super Clear and Clean Layout</li>
-	<li>Compatible with iPhone, Ipads (Responsive layout, but is looking good on tablets and mobile devices!)</li>
-	<li>Designed With Responsiveness in Mind</li>
-	<li>Smooth css3 animations</li>
-	<li>Working Contact Form</li>
-    <li>nice JQuery files: Preloader, Menu…</li>
-    <li>Google Web Fonts</li>
-    <li>Compatible With Major Modern Browsers</li>
-	<li>Easy to Use and Easy to Customize</li>
-	<li>100%  Support</li>
-	<li>All files are well commented and organized</li>
-    <li>Active and Hover Options</li>
-	<li>Bootstrap 4 Components Compatible</li>
-	<li>All files are well commented and organized</li>
- </ul>
-</section>
-<hr>
-<section id="structure">
-  <div class="page-header">
-    <h3>HTML Structure</h3>
-    <hr class="notop">
-  </div>
- 
-</section>
-<hr>
-
-<img src="assets/images/html.png">
-
-<hr>
-
-<section id="JS">
-  <div class="page-header">
-    <h3>Java Scripts + libraries</h3>
-    <hr class="notop">
-  </div>
-  <img src="assets/images/js.png">
-</section>
-<hr>
-
-
-<section id="Fonts">
-  <div class="page-header">
-    <h3>Fonts</h3>
-    <hr class="notop">
-  </div>
-  <h5>I Have Used 2 Variations of Fonts in this HTML Template</h5>
-  <div style="width: 500px;"><br>
-    <ul>
-      <li>Font used in this Template is the standard <a href="https://fonts.google.com/specimen/Raleway">Google Webfonts - "Raleway"</a></li>
-   
-	  <li>Font used in this Template is the standard <a href="https://fonts.google.com/specimen/Lato">Google Webfonts - "Lato"</a></li>
-	
-  </ul>
-  </div>
-</section>
-<hr>
-<section id="Credits">
-  <div class="page-header">
-    <h3>Source and Credit </h3>
-    <hr class="notop">
-  </div>
-  <h5>I am Happy to Credit the Below : </h5>
-  
-  <ol>
-    <li>Fonts : Google Webfonts</li>
-    <li>Images : Photodune</li>
-    <li>Images : Shutterstock</li>
-    <li>Icons : Flaticon</li>
-    <li>Icons : Fontawesome</li>
-    <li>Images : Unsplash</li>
-    <li>Bootstrap</li>
-  </ol>
-</section>
-<hr>
-<section id="Conclusion">
-<div class="page-header">
- <h3>Conclusion</h3>
- <hr class="notop">
-</div>
-<p>Once again, thank you so much for purchasing this Template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this Template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the Templates , you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
-<hr>
-
-<br>
-<br>
-</section>
-</div>
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>
